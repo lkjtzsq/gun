@@ -5,15 +5,18 @@
     </div>
     <div class="login-part">
       <div class="input-group">
-        <input type="telephone" v-model="telephone" :placeholder="hoderTel" @blur="inputBlur">
+        <mt-field :placeholder="hoderTel" type="telephone" v-model="telephone" @blur.native.capture="inputBlur"></mt-field>
       </div>
       <div class="input-group">
-        <input type="password" v-model="password" :placeholder="hoderPwd">
+        <mt-field :placeholder="hoderPwd" type="password" v-model="password"></mt-field>
       </div>
       <div class="button" @click="submit">登 录</div>
       <div class="login-bottom">
         <router-link to="/" class="login-short">短信验证码登录</router-link>
         <router-link to="/" class="register">注册</router-link>
+      </div>
+      <div class="login-bottom">
+        <router-link to="/forget" class="login-short">忘记密码？</router-link>
       </div>
     </div>
   </div>
@@ -71,13 +74,7 @@ export default {
   margin: 50px 20px;
 }
 .input-group{
-  height: 40px;
   border-bottom: 1px solid #000;
-}
-.input-group  input {
-  width: 100%;
-  height: 30px;
-  margin-top: 5px;
 }
 .button {
   width: 100%;
