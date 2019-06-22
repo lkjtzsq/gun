@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <img :src="imgUrl">
+
   </div>
 </template>
 
@@ -31,11 +32,13 @@ export default {
 }
 </script>
 <style scoped lang="stylus">
-  .hello
+  .hello{
     position: relative
     width:100%
     height: 100%
-    img
-      width:100%
-      height: 100%
+  }
+  .hello img{
+    width:100%
+    height: 100%
+  }
 </style>
