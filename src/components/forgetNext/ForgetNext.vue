@@ -11,7 +11,9 @@
       <mt-field label="验证码" v-model="captcha" @click.native.capture="getCode">{{text}}
       </mt-field>
     </div>
-    <div class="button">下一步</div>
+    <router-link to="/newPassWord">
+      <div class="button">下一步</div>
+    </router-link>
   </div>
 </div>
 </template>

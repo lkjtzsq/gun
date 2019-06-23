@@ -55,14 +55,14 @@ export default {
     }
   },
   created(){
-    this.axios.get(this.$store.state.domain+"/api/meeting",{
-      params:{
-        date:"2019-6-22",
-        token:"29d216fab87b6eb6f0fe8fe18658b00f"
-      }
-    }).then((data)=>{
-      console.log(data);
-    })
+    // this.axios.get(this.$store.state.domain+"/api/meeting",{
+    //   params:{
+    //     date:"2019-6-22",
+    //     token:"29d216fab87b6eb6f0fe8fe18658b00f"
+    //   }
+    // }).then((data)=>{
+    //   console.log(data);
+    // })
   }
 }
 </script>
